@@ -34,7 +34,7 @@ class UserBasedJdbcBookRecommender implements BookRecommender {
 
     @Override
     @Transactional(readOnly = true)
-    Collection<Long> recommend(Long userId, Integer numRecommendations) {
+    Collection<Long> recommend(Long userId, Integer limit) {
 
         /*
          * The query selects the user's with similar taste as given user based on likes/dislikes
@@ -70,7 +70,7 @@ class UserBasedJdbcBookRecommender implements BookRecommender {
 
         Sql sql = new Sql(dataSource)
 
-        Map parameters = [userId: userId, threshold: proximityThreshold, limit: numRecommendations]
+        Map parameters = [userId: userId, threshold: proximityThreshold, limit: limit]
         List<GroovyRowResult> rows = sql.rows(recommendationQuery, parameters)
 
         return rows.collect({ it.book_id as Long})

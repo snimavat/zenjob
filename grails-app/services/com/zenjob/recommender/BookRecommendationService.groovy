@@ -26,8 +26,8 @@ class BookRecommendationService {
      *
      */
     @Transactional(readOnly = true)
-    Collection<Book> recommend(Long user, Integer numRecommendations = 20) {
-        Collection<Long> books = bookRecommender.recommend(user, numRecommendations)
+    Collection<Book> recommend(Long user, Integer limit = 20) {
+        Collection<Long> books = bookRecommender.recommend(user, limit)
         return books.collect({ Long id ->  Book.get(id) })
     }
 
