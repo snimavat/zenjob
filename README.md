@@ -5,15 +5,15 @@ Technologies used: **Grails**
 
 This is a poc for book recommendation service implemented purely using grails framework.
 
-The core of the recommedation engine is BookRecommender interface along with UserBasedJdbcBookRecommender 
+The core of the recommedation engine is BookRecommender interface along with [UserBasedJdbcBookRecommender](https://github.com/snimavat/zenjob/blob/master/src/main/groovy/com/zenjob/recommender/UserBasedJdbcBookRecommender.groovy) 
 implementation.
 
-There's a Mahout based recommender implementation which works but has been commented out to keep the dependencies 
+There's a Mahout based [recommender](https://github.com/snimavat/zenjob/blob/master/src/main/groovy/com/zenjob/recommender/MahoutBookRecommender.groovy) implementation which works but has been commented out to keep the dependencies 
 simple.
 
 
 **User preferences** :
-User's preference for a book (like/dislike) is represented by domain ```UserPreference```.
+User's preference for a book (like/dislike) is represented by domain [UserPreference](https://github.com/snimavat/zenjob/blob/master/grails-app/domain/com/zenjob/recommender/UserPreference.groovy).
 preference value of 1 represents like and -1 represents dislike.
 
 
