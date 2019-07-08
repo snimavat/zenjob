@@ -34,9 +34,6 @@ user is
  considered as similar user, default value is 3
 
 
-App provides following Rest endpoints 
-
-
 **How to run**
 
 ```gradle bootRun``` or ```grails run-app```
@@ -46,6 +43,8 @@ App provides following Rest endpoints
 
 ****Endpoints****
 --
+
+App exposes following Rest endpoints 
 
 ****like/dislike a book****
 
