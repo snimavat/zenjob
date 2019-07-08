@@ -82,6 +82,7 @@ curl -X GET -H 'Accept: application/json' -i http://localhost:8080/users/1/prefe
 This endpoint returns list of likes/dislikes for the user.
 
 ****Recommendations****
+
 ```GET http://localhost:8080/users/$id/recommendations```
 
 ```
