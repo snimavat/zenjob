@@ -34,7 +34,12 @@ user is
  considered as similar user, default value is 3
 
 
-**How to run**
+****Running tests****
+
+```gradle check``` or ```grails test-app```
+
+
+**Running app**
 
 ```gradle bootRun``` or ```grails run-app```
 

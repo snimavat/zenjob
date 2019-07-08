@@ -2,7 +2,6 @@ package com.zenjob.recommender
 
 import grails.testing.web.UrlMappingsUnitTest
 import spock.lang.Specification
-import zenjob.UrlMappings
 
 class UrlMappingsSpec extends Specification implements UrlMappingsUnitTest<UrlMappings> {
 

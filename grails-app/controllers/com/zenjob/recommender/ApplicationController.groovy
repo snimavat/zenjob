@@ -1,4 +1,4 @@
-package zenjob
+package com.zenjob.recommender
 
 import grails.core.GrailsApplication
 import grails.plugins.*

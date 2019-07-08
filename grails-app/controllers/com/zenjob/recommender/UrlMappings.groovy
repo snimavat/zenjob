@@ -1,4 +1,4 @@
-package zenjob
+package com.zenjob.recommender
 
 class UrlMappings {
 
