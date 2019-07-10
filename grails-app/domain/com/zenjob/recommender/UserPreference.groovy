@@ -21,7 +21,7 @@ class UserPreference implements Serializable {
     static constraints = {
         userId nullable: false
         bookId nullable: false
-        preference nullable: false
+        preference nullable: false, inList: [LIKE, DISLIKE]
     }
 
     static mapping = {
